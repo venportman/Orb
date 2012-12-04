@@ -1,0 +1,37 @@
+<head>
+  <title>Orb - distributed social</title>
+</head>
+
+
+<body>
+	{{> nav}}
+	{{> hello}}
+</body>
+
+<template name="nav">
+    <div class="navbar">
+    	<div class="navbar-inner">
+    		<a class="brand" href="#">{{currentUser}}'s Orb</a>
+    		<ul class="nav">
+    			<li class="active"><a href="#">Stream</a></li>
+   				<li><a href="#">Mentions</a></li>
+    			<li><a href="#">Direct</a></li>
+    		</ul>
+   			<ul class="nav pull-right" style="margin-top: 9px; margin-right: 2em;">
+          		<li>{{loginButtons align="right"}}</li>
+    		</ul>
+    </div>
+
+    </div>
+
+</template>
+<template name="hello">
+
+	<div class="row">
+		<div class="span6 offset3">
+  		<h1>Stream</h1>
+  		<textarea class="span6" rows="3" placeholder="What are you doing right now?"></textarea><br />
+  		<input type="submit" class="btn" value="Publish" />
+  		</div>
+  	</div>
+</template>
